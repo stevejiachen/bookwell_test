@@ -58,7 +58,6 @@ const CityRegionBox = (props) => {
                     return <NotFound>No regions found</NotFound>;
                 }
                 if (data.city.regions.length === 0 && data.city.suburbs.length !== 0) {
-                    console.log(data.city.suburbs);
                     return (
                         <div className={classes.root}>
                             {data.city.suburbs.map((suburb) => (

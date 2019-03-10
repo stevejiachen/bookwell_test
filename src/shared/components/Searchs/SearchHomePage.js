@@ -33,7 +33,6 @@ class Search extends React.Component {
     };
 
     handleSearch = () => {
-        console.log('ss');
         const { history } = this.props;
         const { suburbSearch, categorySearch } = this.state;
         if (suburbSearch && categorySearch) {
@@ -49,7 +48,7 @@ class Search extends React.Component {
             return;
         }
         if (categorySearch) {
-            history.push(`/venues/${categorySearch.value}}`);
+            history.push(`/venues/${categorySearch.value}`);
         }
     };
 
